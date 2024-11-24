@@ -1,0 +1,40 @@
+.burgerDefault {
+  height: 2px;
+  width: 100%;
+  background-color: rgb(70, 70, 70);
+  transition: all 0.3s ease-in-out;
+  transition-delay: 0.2s;
+}
+
+.burgerActiveLeft {
+  transform-origin: left center;
+  transform: rotate(45deg);
+  translate: 4px -4px;
+}
+.burgerActiveRight {
+  transform-origin: right center;
+  transform-origin: center;
+  transform: rotate(-45deg);
+  translate: 1px -7px;
+}
+
+.menu {
+  position: relative;
+  color: black;
+  height: 100%;
+}
+
+.menuItem {
+  position: absolute;
+  inset: 0;
+  transition: all 0.3s ease-in-out;
+  margin-left: 5px;
+  transform: translateY(4%);
+}
+
+.activeMenu {
+  opacity: 1;
+}
+.disabledMenu {
+  opacity: 0;
+}
